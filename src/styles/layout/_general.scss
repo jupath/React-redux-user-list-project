@@ -1,0 +1,17 @@
+body {
+  background: url('../images/bg.png') repeat;
+}
+
+.hl {
+  background-color: yellow;
+}
+
+a,
+button {
+  color: theme-color("success");
+  transition: all 0.3s;
+  &:hover {
+    color: darken(theme-color("success"), 7%);
+    text-decoration: none;
+  }
+}

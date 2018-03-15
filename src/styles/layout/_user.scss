@@ -1,0 +1,22 @@
+.user {
+  background-color: white;
+  border: 1px solid $border-color;
+  border-radius: 0.25rem;
+  display: flex;
+}
+
+.user__text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.user__text__btnwrapper {
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+}
