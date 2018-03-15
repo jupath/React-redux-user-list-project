@@ -7,6 +7,8 @@
     "dev-server": "webpack-dev-server --mode development --config webpack.dev.js --open",
     "build": "webpack --mode production --config webpack.prod.js",
     "start": "node server/server.js",
+    "clean": "rimraf public/dist",
+    "test": "jest --config=jest.config.json",
     "heroku-postbuild": "yarn run build"
   },
   "repository": "https://github.com/jupath/React-redux-user-list-project/",
@@ -52,6 +54,11 @@
     "webpack-merge": "^4.1.2"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
+    "jest": "^22.4.2",
+    "react-test-renderer": "^16.2.0",
     "webpack-dev-server": "^3.1.0"
   }
 }
