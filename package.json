@@ -9,7 +9,7 @@
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build"
   },
-  "repository": "",
+  "repository": "https://github.com/jupath/React-redux-user-list-project/",
   "author": "Attila Taligas",
   "license": "MIT",
   "dependencies": {
