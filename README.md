@@ -7,7 +7,7 @@
 ```bash
 yarn install
 yarn dev-server //run dev-server
-yarn build //build for production
+yarn build //build production
 yarn start //run express server. it listens on port 3000
 ```
 
