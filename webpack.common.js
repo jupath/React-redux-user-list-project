@@ -1,10 +1,11 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: ['babel-polyfill', './src/index.js'],
   output: {
-    path: path.resolve(__dirname, 'public', 'dist'),
+    path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
   },
   module: {
@@ -36,15 +37,21 @@ module.exports = {
             }
           ]
         })
+      },
+      {
+        test: /\.html$/,
+        use: [ "html-loader" ]
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    })
   ],
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
-    publicPath: '/dist/',
     historyApiFallback: true
   }
 }

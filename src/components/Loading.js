@@ -1,5 +1,5 @@
 import React from 'react';
-import loader from '../images/loader.gif';
+import loader from '../images/spin.svg';
 
 const Loading = () => (
   <div className="loading">
