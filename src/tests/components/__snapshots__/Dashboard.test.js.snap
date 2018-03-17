@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Dashboard correctly when isLoading is false 1`] = `
+<div>
+  <Connect(Header) />
+  <div
+    className="container"
+  >
+    <div
+      className="row users pt-5"
+    >
+      <User
+        key="lazyduck408"
+        userData={
+          Object {
+            "cell": "(065)-247-9303",
+            "firstName": "romain",
+            "image": "https://randomuser.me/api/portraits/men/83.jpg",
+            "lastName": "hoogmoed",
+            "username": "lazyduck408",
+          }
+        }
+      />
+      <User
+        key="testusername2"
+        userData={
+          Object {
+            "cell": "123456",
+            "firstName": "test 2",
+            "image": "https://randomuser.me/api/portraits/men/82.jpg",
+            "lastName": "user 2",
+            "username": "testusername2",
+          }
+        }
+      />
+      <User
+        key="testusername3"
+        userData={
+          Object {
+            "cell": "123456",
+            "firstName": "test 3",
+            "image": "https://randomuser.me/api/portraits/men/81.jpg",
+            "lastName": "user 3",
+            "username": "testusername3",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render Dashboard correctly when isLoading is true 1`] = `
+<div>
+  <Connect(Header) />
+  <div
+    className="container"
+  >
+    <div
+      className="row users pt-5"
+    >
+      <Loading />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render UserSinglePage correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="px-lg-6 mt-6 mb-4"
+  >
+    <div
+      className="row user-single p-3"
+    >
+      <div
+        className="pr-3"
+      >
+        <img
+          src="https://randomuser.me/api/portraits/men/83.jpg"
+        />
+      </div>
+      <div
+        className="user-single__details"
+      >
+        <h2
+          className="text-capitalize font-weight-bold"
+        >
+          romain
+           
+          hoogmoed
+        </h2>
+        <div
+          className="user-single__details__field"
+        >
+          <div
+            className="font-weight-bold pr-2"
+          >
+            Email:
+          </div>
+          <Connect(UserSinglePageField)
+            data="romain.hoogmoed@example.com"
+            field="email"
+            isEditable={true}
+            username="lazyduck408"
+          />
+        </div>
+        <div
+          className="user-single__details__field"
+        >
+          <div
+            className="font-weight-bold pr-2"
+          >
+            Cell:
+          </div>
+          <Connect(UserSinglePageField)
+            data="(065)-247-9303"
+            field="cell"
+            isEditable={true}
+            username="lazyduck408"
+          />
+        </div>
+        <div
+          className="user-single__details__field text-capitalize"
+        >
+          <div
+            className="font-weight-bold pr-2"
+          >
+            Address:
+          </div>
+          <Connect(UserSinglePageField)
+            data="1861 jan pieterszoon coenstraat, maasdriel, zeeland, 69217"
+            field="address"
+            isEditable={true}
+            username="lazyduck408"
+          />
+        </div>
+        <div
+          className="user-single__details__field"
+        >
+          <div
+            className="font-weight-bold pr-2"
+          >
+            Day of birth:
+          </div>
+          <Connect(UserSinglePageField)
+            data="14th July, 1983"
+            field="dob"
+            isEditable={false}
+            username="lazyduck408"
+          />
+        </div>
+        <Button
+          className="mt-3"
+          color="success"
+          onClick={[Function]}
+          tag="button"
+        >
+          Back to dashboard
+        </Button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

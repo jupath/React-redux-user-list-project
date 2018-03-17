@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle update button on click and render correctly 1`] = `
+<div>
+  <UserSinglePageForm
+    data="romain.hoogmoed@example.com"
+    handleUpdateUser={[Function]}
+  />
+</div>
+`;
+
+exports[`should render correctly when isEditable is false and isUpdate state is false  1`] = `
+<div>
+  <span
+    className="user-single__text"
+  >
+    romain.hoogmoed@example.com
+  </span>
+</div>
+`;

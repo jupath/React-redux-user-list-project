@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render User correctly 1`] = `
+<div
+  className="col-sm-4 mb-4"
+>
+  <div
+    className="user p-3"
+  >
+    <div>
+      <img
+        className="mr-2"
+        src="https://randomuser.me/api/portraits/men/83.jpg"
+      />
+    </div>
+    <div
+      className="user__text"
+    >
+      <h5
+        className="text-capitalize font-weight-bold"
+      >
+        hoogmoed
+        , 
+        romain
+      </h5>
+      <p>
+        Cell: 
+        (065)-247-9303
+      </p>
+      <div
+        className="user__text__btnwrapper"
+      >
+        <Link
+          className="btn btn-success"
+          replace={false}
+          to="/user/lazyduck408"
+        >
+          Details
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,4 +1,4 @@
-const initialFiltersState = {
+export const initialFiltersState = {
   text: '',
   orderBy: undefined
 }

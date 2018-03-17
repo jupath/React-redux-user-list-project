@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render UserSinglePageForm correctly 1`] = `
+<form
+  className="user-single__form"
+  onSubmit={[Function]}
+>
+  <AutosizeInput
+    injectStyles={true}
+    minWidth={1}
+    onChange={[Function]}
+    type="text"
+    value="romain.hoogmoed@example.com"
+  />
+  <Button
+    color="success"
+    tag="button"
+  >
+    save
+  </Button>
+</form>
+`;

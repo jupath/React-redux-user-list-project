@@ -17,7 +17,8 @@ export const startSetUsers = url => {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      const users = await data.results.map(user => {
+      const results = await data.results;
+      const users = await results.map(user => {
         return ({
           username: user.login.username,
           firstName: user.name.first,

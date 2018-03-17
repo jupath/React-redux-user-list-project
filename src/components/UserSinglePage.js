@@ -4,7 +4,7 @@ import moment from 'moment';
 import { Button } from 'reactstrap';
 import UserSinglePageField from './UserSinglePageField';
 
-class UserSinglePage extends Component {
+export class UserSinglePage extends Component {
 
   render() {
 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Button, Input } from 'reactstrap';
 import { setOrderBy, setText } from '../actions/filters';
 
-class Header extends Component {
+export class Header extends Component {
 
   handleOrderByClick = orderBy => {
     this.props.setOrderBy(orderBy);
@@ -25,9 +25,9 @@ class Header extends Component {
           </div>
           <div>
           <span>Order list by name: </span>
-            <Button color="success" className="mr-1" disabled={this.props.orderBy === 'asc'} onClick={() => this.handleOrderByClick('asc')}>Asc</Button>
-            <Button color="success" className="mr-1" disabled={this.props.orderBy === 'desc'} onClick={() => this.handleOrderByClick('desc')}>Desc</Button>
-            <Button color="success" disabled={this.props.orderBy === undefined} onClick={() => this.handleOrderByClick()}>Default</Button>
+            <Button id="ascButton" color="success" className="mr-1" disabled={this.props.orderBy === 'asc'} onClick={() => this.handleOrderByClick('asc')}>Asc</Button>
+            <Button id="descButton" color="success" className="mr-1" disabled={this.props.orderBy === 'desc'} onClick={() => this.handleOrderByClick('desc')}>Desc</Button>
+            <Button id="defaultButton" color="success" disabled={this.props.orderBy === undefined} onClick={() => this.handleOrderByClick()}>Default</Button>
           </div>
         </div>
       </header>

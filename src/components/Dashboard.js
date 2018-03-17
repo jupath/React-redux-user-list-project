@@ -5,7 +5,7 @@ import Header from './Header';
 import User from './User';
 import Loading from './Loading';
 
-class Dashboard extends Component {
+export class Dashboard extends Component {
   renderUsers = () => {
     if(this.props.isLoading) {
       return <Loading />

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Footer correctly 1`] = `
+<footer
+  className="footer pb-4 text-center"
+>
+  <h5>
+    View 
+    <a
+      className="font-weight-bold"
+      href="https://github.com/jupath/React-redux-user-list-project/"
+      target="_blank"
+    >
+      Source on GitHub
+    </a>
+  </h5>
+</footer>
+`;

@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly when orderBy is defined 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="container text-center py-4"
+  >
+    <h1>
+      User list built with React and Redux
+    </h1>
+    <p>
+      This app uses async-await to fetch users from 
+      <a
+        href="https://randomuser.me/"
+        target="_blank"
+      >
+        randomuser.me
+      </a>
+       API
+    </p>
+    <div
+      className="px-lg-7 pb-4"
+    >
+      <Input
+        className="header__searchform"
+        onChange={[Function]}
+        placeholder="Search by name..."
+        tag="p"
+        type="text"
+      />
+    </div>
+    <div>
+      <span>
+        Order list by name: 
+      </span>
+      <Button
+        className="mr-1"
+        color="success"
+        disabled={true}
+        id="ascButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Asc
+      </Button>
+      <Button
+        className="mr-1"
+        color="success"
+        disabled={false}
+        id="descButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Desc
+      </Button>
+      <Button
+        color="success"
+        disabled={false}
+        id="defaultButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Default
+      </Button>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`should render Header correctly when orderBy is undefined 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="container text-center py-4"
+  >
+    <h1>
+      User list built with React and Redux
+    </h1>
+    <p>
+      This app uses async-await to fetch users from 
+      <a
+        href="https://randomuser.me/"
+        target="_blank"
+      >
+        randomuser.me
+      </a>
+       API
+    </p>
+    <div
+      className="px-lg-7 pb-4"
+    >
+      <Input
+        className="header__searchform"
+        onChange={[Function]}
+        placeholder="Search by name..."
+        tag="p"
+        type="text"
+      />
+    </div>
+    <div>
+      <span>
+        Order list by name: 
+      </span>
+      <Button
+        className="mr-1"
+        color="success"
+        disabled={false}
+        id="ascButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Asc
+      </Button>
+      <Button
+        className="mr-1"
+        color="success"
+        disabled={false}
+        id="descButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Desc
+      </Button>
+      <Button
+        color="success"
+        disabled={true}
+        id="defaultButton"
+        onClick={[Function]}
+        tag="button"
+      >
+        Default
+      </Button>
+    </div>
+  </div>
+</header>
+`;

@@ -4,7 +4,7 @@ import FaPencil from 'react-icons/lib/fa/pencil';
 import UserSinglePageForm from './UserSinglePageForm';
 import { updateUser } from '../actions/users'
 
-class UserSinglePageField extends Component {
+export   class UserSinglePageField extends Component {
 
   state = {
     isUpdate: false

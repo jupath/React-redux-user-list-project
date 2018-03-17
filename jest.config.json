@@ -2,8 +2,13 @@
   "snapshotSerializers": [
     "enzyme-to-json/serializer"
   ],
+  "automock": false,
   "setupFiles": [
     "raf/polyfill",
     "<rootDir>/src/enzyme.setup.js"
-  ]
+  ],
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|svg)$":
+      "<rootDir>/src/tests/__mocks__/fileMock.js"
+  }
 }
