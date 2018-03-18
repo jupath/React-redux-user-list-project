@@ -43,7 +43,14 @@ export class Dashboard extends Component {
 }
 
 Dashboard.propTypes = {
+  users: PropTypes.arrayOf(PropTypes.object),
+  filterText: PropTypes.string,
   isLoading: PropTypes.bool.isRequired,
+};
+
+Dashboard.defaultProps = {
+  users: [],
+  filterText: '',
 };
 
 const mapStateToProps = state => ({

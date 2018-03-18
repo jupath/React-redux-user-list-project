@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button, Input } from 'reactstrap';
+import PropTypes from 'prop-types';
 import { setOrderBy, setText } from '../actions/filters';
 
 export class Header extends Component {
@@ -18,7 +19,7 @@ export class Header extends Component {
       <header className="header">
         <div className="container text-center py-4">
           <h1>User list built with React and Redux</h1>
-          <p>This app uses async-await to fetch users from <a href="https://randomuser.me/" target="_blank">randomuser.me</a> API</p>
+          <p>This app uses async-await to fetch users from <a href="https://randomuser.me/" target="_blank" rel="noopener noreferrer">randomuser.me</a> API</p>
           <div className="px-lg-7 pb-4">
             <Input type="text" placeholder="Search by name..." className="header__searchform" onChange={this.handleSetText} />
           </div>
@@ -33,6 +34,16 @@ export class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  orderBy: PropTypes.string,
+  setOrderBy: PropTypes.func.isRequired,
+  setText: PropTypes.func.isRequired,
+};
+
+Header.defaultProps = {
+  orderBy: undefined,
+};
 
 const mapStateToProps = state => ({
   orderBy: state.filters.orderBy,

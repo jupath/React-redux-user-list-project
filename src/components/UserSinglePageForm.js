@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AutosizeInput from 'react-input-autosize';
 import { Button } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 class UserSinglePageForm extends Component {
   state = {
@@ -16,7 +17,7 @@ class UserSinglePageForm extends Component {
 
   submitForm = (event) => {
     event.preventDefault();
-    const text = this.state.text;
+    const { text } = this.state;
     this.props.handleUpdateUser(text);
   }
 
@@ -33,5 +34,10 @@ class UserSinglePageForm extends Component {
     );
   }
 }
+
+UserSinglePageForm.propTypes = {
+  data: PropTypes.string.isRequired,
+  handleUpdateUser: PropTypes.func.isRequired,
+};
 
 export default UserSinglePageForm;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { startSetUsers } from '../actions/users';
 import Dashboard from '../components/Dashboard';
 import UserSinglePage from '../components/UserSinglePage';
@@ -27,6 +28,10 @@ class AppRouter extends Component {
     );
   }
 }
+
+AppRouter.propTypes = {
+  fetchData: PropTypes.func.isRequired,
+};
 
 const mapDispatchToProps = dispatch => ({
   fetchData: url => dispatch(startSetUsers(url)),
