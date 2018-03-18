@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import filterUsers from '../selectors/users';
 import Header from './Header';
 import User from './User';
@@ -40,6 +41,10 @@ export class Dashboard extends Component {
     );
   }
 }
+
+Dashboard.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+};
 
 const mapStateToProps = state => ({
   users: filterUsers(state.users, state.filters),

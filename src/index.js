@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRouter from './routers/AppRouter';
 import { Provider } from 'react-redux';
+import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import 'babel-polyfill';
 import './styles/styles.scss';
 
 const store = configureStore();

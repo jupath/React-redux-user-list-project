@@ -1,5 +1,5 @@
 {
-  "name": "react-todo-list",
+  "name": "react-redux-user-list",
   "version": "1.0.0",
   "description": "User list built with React and Redux",
   "main": "index.js",
@@ -36,6 +36,7 @@
     "mime": "^2.2.0",
     "moment": "^2.21.0",
     "node-sass": "^4.7.2",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-icons": "^2.2.7",

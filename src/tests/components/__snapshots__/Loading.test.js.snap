@@ -5,6 +5,7 @@ exports[`should render Loading correctly 1`] = `
   className="loading"
 >
   <img
+    alt="loading..."
     src="test-file-stub"
   />
 </div>
