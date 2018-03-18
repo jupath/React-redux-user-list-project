@@ -3,7 +3,7 @@ import loader from '../images/spin.svg';
 
 const Loading = () => (
   <div className="loading">
-    <img src={loader} />
+    <img src={loader} alt="loading..." />
   </div>
 );
 
