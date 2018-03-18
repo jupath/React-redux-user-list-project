@@ -8,23 +8,23 @@ test('should set filters reducer default state', () => {
 test('should set order by filter', () => {
   const action = {
     type: 'SET_ORDER_BY',
-    orderBy: 'asc'
+    orderBy: 'asc',
   };
   const state = filters(initialFiltersState, action);
   expect(state).toEqual({
     text: '',
-    orderBy: 'asc'
+    orderBy: 'asc',
   });
 });
 
 test('should set text filter', () => {
   const action = {
     type: 'SET_TEXT_FILTER',
-    text: 'test text'
+    text: 'test text',
   };
   const state = filters(initialFiltersState, action);
   expect(state).toEqual({
     text: 'test text',
-    orderBy: undefined
+    orderBy: undefined,
   });
 });

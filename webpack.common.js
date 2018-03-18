@@ -6,7 +6,7 @@ module.exports = {
   entry: ['babel-polyfill', './src/index.js'],
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -14,8 +14,8 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.*s?css$/,
@@ -25,33 +25,33 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 sourceMap: true,
-                minimize: true
-              }
+                minimize: true,
+              },
             },
             {
               loader: 'sass-loader',
               options: {
                 sourceMap: true,
-                minimize: true
-              }
-            }
-          ]
-        })
+                minimize: true,
+              },
+            },
+          ],
+        }),
       },
       {
         test: /\.html$/,
-        use: [ "html-loader" ]
-      }
-    ]
+        use: ['html-loader'],
+      },
+    ],
   },
   plugins: [
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
-    })
+      template: 'src/index.html',
+    }),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
-    historyApiFallback: true
-  }
-}
+    historyApiFallback: true,
+  },
+};

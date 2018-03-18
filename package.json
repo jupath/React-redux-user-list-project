@@ -9,6 +9,7 @@
     "start": "node server/server.js",
     "clean": "rimraf public/dist",
     "test": "jest --config=jest.config.json",
+    "lint": "eslint **/*.js",
     "heroku-postbuild": "yarn run build"
   },
   "repository": "https://github.com/jupath/React-redux-user-list-project/",
@@ -54,9 +55,15 @@
     "webpack-merge": "^4.1.2"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.1",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "fetch-mock": "^6.1.0",
     "jest": "^22.4.2",
     "react-test-renderer": "^16.2.0",

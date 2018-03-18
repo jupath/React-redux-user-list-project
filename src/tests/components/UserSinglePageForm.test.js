@@ -12,7 +12,7 @@ test('should set text in input change', () => {
   const value = 'test@example.com';
   const wrapper = shallow(<UserSinglePageForm data={users[0].email} />);
   wrapper.find('AutosizeInput').simulate('change', {
-    target: {value}
+    target: { value },
   });
   expect(wrapper.state('text')).toBe(value);
 });
@@ -22,7 +22,7 @@ test('should handle submit form correctly', () => {
   const handleUpdateUserSpy = jest.fn();
   const wrapper = shallow(<UserSinglePageForm data={value} handleUpdateUser={handleUpdateUserSpy} />);
   wrapper.find('form').simulate('submit', {
-    preventDefault: () => { }
+    preventDefault: () => { },
   });
   expect(handleUpdateUserSpy).toHaveBeenLastCalledWith(value);
 });

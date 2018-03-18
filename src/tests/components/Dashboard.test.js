@@ -4,7 +4,7 @@ import { Dashboard } from '../../components/Dashboard';
 import users from '../fixtures/users';
 
 test('should render Dashboard correctly when isLoading is true', () => {
-  const wrapper = shallow(<Dashboard isLoading={true} />);
+  const wrapper = shallow(<Dashboard isLoading />);
   expect(wrapper).toMatchSnapshot();
 });
 

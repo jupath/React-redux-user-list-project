@@ -9,9 +9,9 @@ test('should render correctly when isEditable is false and isUpdate state is fal
 });
 
 test('should handle update button on click and render correctly', () => {
-  const wrapper = shallow(<UserSinglePageField data={users[0].email} isEditable={true} />);
+  const wrapper = shallow(<UserSinglePageField data={users[0].email} isEditable />);
   wrapper.find('a').simulate('click');
   expect(wrapper.state('isUpdate')).toBe(true);
   expect(wrapper).toMatchSnapshot();
-})
+});
 

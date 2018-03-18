@@ -9,7 +9,7 @@ test('should set usersAreLoading reducer default state', () => {
 test('should set usersAreLoading reducer state true', () => {
   const action = {
     type: 'USERS_ARE_LOADING',
-    isLoading: true
+    isLoading: true,
   };
   const state = usersAreLoading(undefined, action);
   expect(state).toBe(true);
@@ -23,7 +23,7 @@ test('should set users reducer default state', () => {
 test('should set users', () => {
   const action = {
     type: 'SET_USERS',
-    users: usersFixture
+    users: usersFixture,
   };
   const state = users(undefined, action);
   expect(state).toEqual(usersFixture);
@@ -35,8 +35,8 @@ test('should update user', () => {
     type: 'UPDATE_USER',
     username: 'lazyduck408',
     updatedData: {
-      email
-    }
+      email,
+    },
   };
   const state = users(usersFixture, action);
   expect(state[0].email).toBe(email);

@@ -1,21 +1,21 @@
 export const initialFiltersState = {
   text: '',
-  orderBy: undefined
-}
+  orderBy: undefined,
+};
 
-export const filters = ( state = initialFiltersState, action ) => {
-  switch(action.type) {
+export const filters = (state = initialFiltersState, action) => {
+  switch (action.type) {
     case 'SET_ORDER_BY':
       return {
         ...state,
-        orderBy: action.orderBy
-      }
+        orderBy: action.orderBy,
+      };
     case 'SET_TEXT_FILTER':
       return {
         ...state,
-        text: action.text
-      }
+        text: action.text,
+      };
     default:
       return state;
   }
-}
+};

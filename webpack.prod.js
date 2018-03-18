@@ -14,11 +14,11 @@ module.exports = merge(common, {
             options: {
               name: '[name]-[hash:8].[ext]',
               useRelativePath: true,
-              limit: 8000
-            }
+              limit: 8000,
+            },
           },
-        ]
-      }
-    ]
-  }
+        ],
+      },
+    ],
+  },
 });

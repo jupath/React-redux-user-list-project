@@ -5,7 +5,7 @@
   "automock": false,
   "setupFiles": [
     "raf/polyfill",
-    "<rootDir>/src/enzyme.setup.js"
+    "<rootDir>/src/tests/enzyme.setup.js"
   ],
   "moduleNameMapper": {
     "\\.(jpg|jpeg|png|gif|svg)$":

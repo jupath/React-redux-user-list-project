@@ -8,7 +8,6 @@ import PageNotFound from '../components/PageNotFound';
 import Footer from '../components/Footer';
 
 class AppRouter extends Component {
-
   componentDidMount() {
     this.props.fetchData('https://randomuser.me/api/?results=30&nat=us');
   }
@@ -18,19 +17,19 @@ class AppRouter extends Component {
       <BrowserRouter>
         <div>
           <Switch>
-            <Route path='/' component={Dashboard} exact={true} />
-            <Route path='/user/:username' component={UserSinglePage} />
+            <Route path="/" component={Dashboard} exact />
+            <Route path="/user/:username" component={UserSinglePage} />
             <Route component={PageNotFound} />
           </Switch>
           <Footer />
         </div>
-    </BrowserRouter>
-    )
+      </BrowserRouter>
+    );
   }
-};
+}
 
 const mapDispatchToProps = dispatch => ({
-  fetchData: (url) => dispatch(startSetUsers(url))
+  fetchData: url => dispatch(startSetUsers(url)),
 });
 
 export default connect(null, mapDispatchToProps)(AppRouter);

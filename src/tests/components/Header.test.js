@@ -8,7 +8,7 @@ test('should render Header correctly when orderBy is undefined', () => {
 });
 
 test('should render Header correctly when orderBy is defined', () => {
-  const wrapper = shallow(<Header orderBy={'asc'} />);
+  const wrapper = shallow(<Header orderBy="asc" />);
   expect(wrapper).toMatchSnapshot();
 });
 
@@ -24,7 +24,7 @@ test('should handle setText correctly', () => {
   const value = 'test';
   const wrapper = shallow(<Header setText={setTextSpy} />);
   wrapper.find('Input').simulate('change', {
-    target: { value }
+    target: { value },
   });
   expect(setTextSpy).toHaveBeenLastCalledWith(value);
 });
